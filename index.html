@@ -8,33 +8,44 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>
+      <h1 class="header-text">UnitConverter.now</h1>
+    </header>
     <div class="container">
-    <h1>Convert Your Unit Below:</h1>
+    <p class="h1">Convert your unit below:</p>
 
     <div class="left-col col">
-      <input class="text1" required placeholder="Type your value here" />
+      <input class="text1" required placeholder="  Type your value here" />
       <select class="left-menu">
-        <option value="select_unit">-- Select Unit --</option>
+        <option value="select_unit">-- Select unit --</option>
         <option value="fahrenheit" class="fahrenheit">Fahrenheit</option>
         <option value="celsius" class="celsius">Celsius</option>
         <option value="pounds" class="pounds">Pounds</option>
+        <option value="kilos" class="kilos">Kilos</option>
         <option value="litres" class="litres">Litres</option>
+        <option value="gallons" class="gallons">Gallons</option>
         <option value="miles" class="miles">Miles</option>
+        <option value="kilometres" class="kilometres">Kilometres</option>
       </select>
     </div>
     <div class="mid-col col">  = </div>
     <div class="right-col col">
       <input class="text2" />
       <select class="right-menu" disabled>
-        <option value="convert_unit">-- Convert Unit To --</option>
+        <option value="convert_unit">-- Convert unit to --</option>
         <option value="celsius">Celsius</option>
         <option value="fahrenheit">Fahrenheit</option>
         <option value="kilos">Kilos</option>
+        <option value="pounds">Pounds</option>
         <option value="gallons">Gallons</option>
+        <option value="litres">Litres</option>
         <option value="kilometres">Kilometres</option>
+        <option value="miles">Miles</option>
       </select>
     </div>
     <script src="script.js"></script>
     </div>
   </body>
 </html>
+
+
