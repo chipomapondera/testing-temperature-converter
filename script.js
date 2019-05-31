@@ -22,8 +22,11 @@ function menuChange(event) {
     fahrenheit: 'celsius',
     celsius: 'fahrenheit',
     pounds: 'kilos',
+    kilos: 'pounds',
     litres: 'gallons',
-    miles: 'kilometres'
+    gallons: 'litres',
+    miles: 'kilometres',
+    kilometres: 'miles'
   }
 
   var matchingValue = conversions[selectedUnit];
@@ -64,11 +67,20 @@ function valueChange(event) {
     case "pounds":
       text2.value = convertPoundsToKilos(enteredValue);
       break;
+    case "kilos":
+      text2.value = convertKilosToPounds(enteredValue);
+      break;
     case "litres":
       text2.value = convertLitresToGallons(enteredValue);
       break;
+    case "gallons":
+      text2.value = convertGallonsToLitres(enteredValue);
+      break;
     case "miles":
       text2.value = convertMilesToKm(enteredValue);
+      break;
+    case "kilometres":
+      text2.value = convertKmToMiles(enteredValue);
       break;
     default:
       /**
@@ -96,13 +108,28 @@ function convertPoundsToKilos(weight) {
 	return kilo.toFixed(1); 
 }
 
+function convertKilosToPounds(weight) {
+	var pound = weight * 2.205
+	return pound.toFixed(0); 
+}
+
 function convertLitresToGallons(volume) {
 	var gallons = volume * 0.22
 	return gallons.toFixed(2);
 }
 
+function convertGallonsToLitres(volume) {
+	var litres = volume * 4.546
+	return litres.toFixed(2);
+}
+
 function convertMilesToKm(distance) {
 	var kms = distance * 1.609
 	return kms.toFixed(0);
+}
+
+function convertKmToMiles(distance) {
+	var miles = distance / 1.609
+	return miles.toFixed(0);
 }
 
