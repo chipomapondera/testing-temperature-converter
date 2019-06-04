@@ -14,10 +14,16 @@ header {
   border-bottom: 1px solid grey;
 }
 
-.header-text {
+.header-text1, .header-text3 {
   font-weight: bold;
   font-size: 34px;
   color: #FF7F50;
+}
+
+.header-text2 {
+  font-weight: bold;
+  font-size: 34px;
+  color: #FFA500;
 }
 
 .container {
