@@ -1,4 +1,8 @@
-Used for codebar's [Introduction to Testing](http://codebar.github.io/tutorials/js/lesson7/tutorial.html) tutorial.
+In this project I use my knowledge of JavaScript to build a unit converter that allows the user to convert a selection of temperature, distance and volume.
+
+This project was built using a TDD method using Jasmine. 
+
+This is a project from the codebar JavaScript tutorials.
 
 How to commit changes:
 
